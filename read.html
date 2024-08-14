@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Project Gallery</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .head{
+            height:10%;
+            background-color: rgb(71, 120, 94);
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            overflow: hidden;
+            position: fixed;
+            z-index: 4;
+            transition: var(--transition-1);
+            width: 100%;
+            
+            }
+            .nav{
+              margin-left:38em; 
+         }
+         .nav >a{
+             color: #fff;
+             text-decoration: none;
+             align-items: center;
+             margin-right: 4em;
+             
+           
+         }
+         .brand{
+             text-decoration: none;
+             letter-spacing: 4px;
+             text-shadow: 0 0 10px #000;
+             color: #fff;
+             font-size: 250%;
+             padding-left:1px;
+         }
+         @media (max-width: 768px) {
+          .head {
+              height: auto;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }
+      
+          .nav {
+              margin-left: 0;
+              margin-top: 10px;
+          }
+      
+          .nav > a {
+              margin-right: 2em;
+          }
+      
+          .brand {
+              font-size: 200%;
+              padding-left: 0;
+          }
+      }
+      
+      /* Media Query for mobile screens */
+      @media (max-width: 480px) {
+          .nav {
+              text-align: center;
+              margin-top: 10px;
+          }
+      
+          .nav > a {
+              display: block;
+              margin-right: 0;
+              margin-bottom: 10px;
+          }
+      
+          .brand {
+              font-size: 150%;
+          }
+      }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .gallery-item-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery-item-content h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .gallery-item-content p {
+            margin: 10px 0 0;
+            font-size: 1em;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <a class="brand" href="#">Read Recipe</a>
+        <div class="nav">
+          <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+         
+        </div>
+  </header>
+    <div class="gallery">
+        <!-- Image 1 -->
+        <div class="gallery-item">
+            <img src="./image/bev2.webp" alt="Spaghetti Carbonara">
+            <div class="gallery-item-content">
+                <h2>Beverages</h2>
+                <p>Spaghetti Carbonara is a classic Italian pasta dish made with eggs, cheese, pancetta, and pepper. It is renowned for its creamy texture and rich, savory flavor. This dish offers a perfect blend of creamy sauce and crispy pancetta, creating a satisfying meal that is both indulgent and comforting. Served with freshly grated Parmesan and a touch of black pepper, it's a true testament to the simplicity and elegance of Italian cuisine. Ideal for a quick yet impressive dinner party or a weeknight family meal.</p>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item">
+            <img src="image/dessert3.webp" alt="Beef Wellington">
+            <div class="gallery-item-content">
+                <h2>Desserts</h2>
+                <p>Beef Wellington is a luxurious dish that consists of beef tenderloin coated with a mixture of mushrooms and pâté, wrapped in puff pastry, and baked to perfection. The result is a crispy, golden-brown exterior encasing a tender, juicy beef center. This dish is often served during special occasions and festive celebrations due to its elegant presentation and rich flavors. Accompanied by a red wine sauce and seasonal vegetables, Beef Wellington promises a memorable dining experience that showcases culinary finesse and classic British cuisine.</p>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item">
+            <img src="./image/nveg2.jpg" alt="Lemon Tart">
+            <div class="gallery-item-content">
+                <h2>Veg</h2>
+                <p>Lemon Tart is a refreshing dessert that combines a buttery, crumbly crust with a tangy and smooth lemon filling. This tart is known for its bright, citrusy flavor that balances sweetness with a touch of tartness, making it a delightful end to any meal. The tart is often topped with a light dusting of powdered sugar or a dollop of whipped cream. It’s a perfect choice for spring and summer gatherings, offering a light yet satisfying treat that pairs beautifully with a cup of tea or a glass of chilled white wine.</p>
+            </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item">
+            <img src="./image/nveg3.jpeg" alt="Sushi">
+            <div class="gallery-item-content">
+                <h2>Non-veg</h2>
+                <p>Homemade Sushi is a culinary art that involves rolling fresh ingredients like sushi-grade fish, vegetables, and rice in seaweed sheets. The sushi rolls are crafted with care, ensuring the perfect balance of flavors and textures in every bite. This dish showcases the versatility of Japanese cuisine, offering options from classic rolls like California Roll to more adventurous creations. Homemade sushi allows for customization to suit personal tastes and dietary preferences, making it a fun and interactive meal option for family gatherings or casual get-togethers.</p>
+            </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="gallery-item">
+            <img src="./image/veg4.jpg" alt="Chocolate Mousse">
+            <div class="gallery-item-content">
+                <h2>Salads</h2>
+                <p>Chocolate Mousse is a rich, decadent dessert made with chocolate, cream, and eggs. It is known for its velvety texture and intense chocolate flavor, making it a favorite among dessert lovers. The mousse can be served in individual cups or as a layered dessert, and is often garnished with whipped cream or chocolate shavings. This dessert is perfect for special occasions or as a luxurious treat to end a meal on a high note. Its smooth consistency and rich taste make it an indulgence that is both comforting and satisfying.</p>
+            </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="gallery-item">
+            <img src="./image/veg1.jpeg" alt="Caesar Salad">
+            <div class="gallery-item-content">
+                <h2>Starters</h2>
+                <p>Caesar Salad is a classic dish known for its crisp romaine lettuce, crunchy croutons, and creamy Caesar dressing made from eggs, garlic, Parmesan cheese, and anchovies. The salad is typically topped with freshly grated Parmesan and a squeeze of lemon for added flavor. It is a popular choice for both casual and formal dining, offering a refreshing and savory option that complements a variety of main courses. Caesar Salad is versatile and can be customized with additional ingredients such as grilled chicken or shrimp for a more substantial meal.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

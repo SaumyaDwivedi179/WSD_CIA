@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="recipes.xsd">
+    <recipe>
+        <title>Classic Spaghetti Bolognese</title>
+        <description>A traditional Italian pasta dish with a rich and savory meat sauce.</description>
+        <ingredients>
+            <ingredient>Spaghetti</ingredient>
+            <ingredient>Ground beef</ingredient>
+            <ingredient>Tomato sauce</ingredient>
+            <ingredient>Onion</ingredient>
+            <ingredient>Garlic</ingredient>
+            <ingredient>Olive oil</ingredient>
+            <ingredient>Salt</ingredient>
+            <ingredient>Pepper</ingredient>
+            <ingredient>Parmesan cheese</ingredient>
+        </ingredients>
+        <instructions>
+            <step>Cook spaghetti according to package instructions.</step>
+            <step>In a separate pan, heat olive oil and sauté onions and garlic until translucent.</step>
+            <step>Add ground beef and cook until browned.</step>
+            <step>Stir in tomato sauce and let simmer for 15 minutes.</step>
+            <step>Season with salt and pepper to taste.</step>
+            <step>Serve sauce over spaghetti and sprinkle with Parmesan cheese.</step>
+        </instructions>
+    </recipe>
+    <recipe>
+        <title>Vegetarian Chili</title>
+        <description>A hearty and spicy vegetarian chili with a variety of beans and vegetables.</description>
+        <ingredients>
+            <ingredient>Canned kidney beans</ingredient>
+            <ingredient>Canned black beans</ingredient>
+            <ingredient>Canned diced tomatoes</ingredient>
+            <ingredient>Bell peppers</ingredient>
+            <ingredient>Onion</ingredient>
+            <ingredient>Garlic</ingredient>
+            <ingredient>Chili powder</ingredient>
+            <ingredient>Cumin</ingredient>
+            <ingredient>Olive oil</ingredient>
+            <ingredient>Salt</ingredient>
+            <ingredient>Pepper</ingredient>
+        </ingredients>
+        <instructions>
+            <step>Heat olive oil in a large pot and sauté onions and garlic until softened.</step>
+            <step>Add bell peppers and cook for another 5 minutes.</step>
+            <step>Stir in chili powder and cumin, and cook for 1 minute.</step>
+            <step>Add beans and diced tomatoes. Bring to a boil.</step>
+            <step>Reduce heat and simmer for 30 minutes.</step>
+            <step>Season with salt and pepper to taste.</step>
+        </instructions>
+    </recipe>
+</recipes>
